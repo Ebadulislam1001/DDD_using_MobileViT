@@ -4,8 +4,8 @@ from ultralytics import RTDETR
 video_path = 0
 cap = cv2.VideoCapture(video_path)
 
-window_width = 1000
-window_height = 800
+window_width = 640
+window_height = 480
 cv2.namedWindow(" model Test", cv2.WINDOW_NORMAL)
 cv2.resizeWindow(" model Test", window_width, window_height)
 model = RTDETR('best.pt')
