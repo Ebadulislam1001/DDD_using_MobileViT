@@ -9,10 +9,11 @@ def play_music(file_path):
     pygame.mixer.music.load(file_path)
     pygame.mixer.music.play()
 
-# Example usage
-# file_path = "C:\\Users\\ammad\\Documents\\Ebad\\Codes\\Major_Project\\wake_up.mp3"
-file_path = "wake_up.mp3"
-play_music(file_path)
-
-# Add a delay so the program doesn't exit immediately
-pygame.time.wait(5000)  # Adjust the time as needed
+i = 0
+while(True):
+    if(i%2 == 0):
+        file_path = "wake_up.mp3"
+        play_music(file_path)
+    i += 1
+    # Add a delay so the program doesn't exit immediately
+    pygame.time.wait(7000)  # Adjust the time as needed
