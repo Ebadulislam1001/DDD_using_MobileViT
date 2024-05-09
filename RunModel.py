@@ -16,7 +16,7 @@ window_width = 640
 window_height = 480
 cv2.namedWindow(" model Test", cv2.WINDOW_NORMAL)
 cv2.resizeWindow(" model Test", window_width, window_height)
-model = RTDETR("best_improved_dataset.pt")
+model = RTDETR("best_imp.pt")
 
 sleep_counter = 0
 while cap.isOpened():
